@@ -1,95 +1,131 @@
-.allquestions {
-    display: flex;
-    /* flex-direction: column; */
-    width: 100%;
-    padding: 20px 0px;
-    border-bottom: 1px solid #eee;
-    width: 100%;
-  }
+.all_questions {
+  display: flex;
+  /* flex-direction: column; */
+  width: 100%;
+  padding: 20px 0px;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+}
 
-  .allquestions__container {
-    display: flex;
-    /* flex-direction: column; */
-    flex-direction: row;
-    /* align-items: center; */
-    /* Change */
-    /* justify-content: space-between; */
-    width: 100%;
-  }
+.all_questions_container {
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: space-between;
+  width: 100%;
+}
 
-  .allquestions__containerLeft {
-    display: flex;
-    margin-right: 30px;
-  }
+.all_questions_left {
+  display: flex;
+  margin-right: 30px;
+}
 
-  .allquestions__containerLeftOptions{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: rgba(0, 0, 0, 0.7);
-    font-size: small;
-  }
-  
-  .allquestions__containerLeftOptionsOption {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .allquestions__containerLeftOptionsOption > p {
-    font-size: large;
-  }
-  
-  .allquestions__containerAnswer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .allquestions__containerAnswer > a {
-    color: #0151f0d8;
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-  }
-  .allquestions__containerAnswerr > a:hover {
-    color: #1649b1d8;
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-  }
-  
-  .allquestions__containerAnswer > p {
-    font-size: 0.9rem;
-    color: rgba(0, 0, 0, 0.7);
-    margin-bottom: 10px;
-  }
+.all_options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: small;
+}
 
-  .allquestions__containerAnswerTags{
-      margin: 10px 5px;
-      padding: 5px 10px;
-      background-color: #0151f03d;
-      border-radius: 3px;
-  }
-  
-  .allquestions__containerAnswerAuthor {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-  }
-  
-  .allquestions__containerAnswerAuthor > small {
-    color: rgba(0, 0, 0, 0.5);
-    margin-bottom: 5px;
-  }
-  
-  .allquestions__containerAnswerAuthorDetails {
-    display: flex;
-    align-items: center;
-  }
-  
-  .allquestions__containerAnswerAuthorDetails > p {
-    margin-left: 5px;
-    font-size: small;
-    color: #0151f0d8;
-  }
-  
+.all_option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.all_option > p {
+  font-size: large;
+}
+
+.question_answer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.question_answer > a {
+  color: #0151f0d8;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.question_answer > a:hover {
+  color: #1649b1d8;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.question_answer > p {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 10px;
+}
+
+.question_tags {
+  margin: 10px 5px;
+  padding: 5px 10px;
+  background-color: #0151f03d;
+  border-radius: 3px;
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.author > small {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+}
+
+.auth_details {
+  display: flex;
+  align-items: center;
+}
+
+.auth_details > p {
+  margin-left: 5px;
+  font-size: small;
+  color: #0151f0d8;
+}
+
+.comments {
+  margin: 10px 0;
+  width: 90%;
+  margin-left: auto;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  padding: 10px 0px;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+}
+
+.comment > p {
+  margin: 10px 0;
+}
+
+.comment > p > span {
+  padding: 3px;
+  background-color: #0151f028;
+  color: #0151f0d8;
+  border-radius: 2px;
+}
+
+.comments > p {
+  margin-left: -30px;
+  margin-top: 20px;
+  font-size: small;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.comments > p:hover {
+  color: #0151f0a2;
+}

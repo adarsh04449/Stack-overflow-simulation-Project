@@ -1,34 +1,28 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Sidebar.css';
-import PublicIcon from "@material-ui/icons/Public";
-
+import React from "react";
+// import PublicIcon from "@material-ui/icons/Public";
+// import StarsIcon from "@material-ui/icons/Stars";
+// import WorkIcon from "@material-ui/icons/Work";
+import "./css/Sidebar.css";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
   return (
     <div className="sidebar">
-      <div className="sidebar__container">
-        <div className="sidebar__containerOptions">
-          <div className="sidebar__containerOptionsOption">
+      <div className="sidebar_container">
+        <div className="sidebar_options">
+          <div className="sidebar_option">
             <Link to="/">Home</Link>
           </div>
-          <div className="sidebar__containerOptionsOption">
-            <p>PUBLIC</p>
-            <div className="sidebar__containerOptionsOptionLink">
-              <div className="sidebar__containerOptionsOptionLinkTag">
-                <PublicIcon />
-                <Link to="/">Question</Link>
-              </div>
-              <div className="sidebar__containerOptionsOptionLinkTags">
-                <p>Tags</p>
-                <p>Users</p>
-              </div>
-            </div>
+          <div className="sidebar_option">
+            <Link to="/">Tags</Link>
+          </div>
+          <div className="sidebar_option">
+            <Link to="/">Users</Link>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Sidebar
+export default Sidebar;
